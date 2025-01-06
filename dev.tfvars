@@ -1,5 +1,5 @@
 env                    = "dev"
-prefix                 = "terrakube"
+prefix                 = "terrakube-test"
 resource_group_name    = "sa1_test_eic_MaazPatel"
 vm_username            = "adminuser-maaz"
 network_interface_name = "maaz-nic"
