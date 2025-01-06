@@ -4,7 +4,7 @@ data "azurerm_resource_group" "maaz_rg" {
 }
 
 data "azurerm_ssh_public_key" "maaz_pubic_key" {
-  name                = "terrakube"
+  name                = "mayusha-ssh-key"
   resource_group_name = var.resource_group_name
 }
 
