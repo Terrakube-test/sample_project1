@@ -11,10 +11,6 @@ data "azurerm_ssh_public_key" "maaz_pubic_key" {
 locals {
   tags = {
     Resource_Owner    = "Maaz Patel",
-    Delivery_Manager  = "Shahid Raza",
-    Sub_Business_Unit = "PES-IA",
-    Business_Unit     = "einfochips",
-    Project_Name      = "Training and Learning",
     Environment       = var.env,
     Create_Date       = "02 Jan 2025"
   }
