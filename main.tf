@@ -4,15 +4,16 @@ data "azurerm_resource_group" "maaz_rg" {
 }
 
 data "azurerm_ssh_public_key" "maaz_pubic_key" {
-  name                = "mayusha-ssh-key"
+  name                = var.key_name
   resource_group_name = var.resource_group_name
 }
-
 locals {
-  tags = {
-    Resource_Owner    = "Maaz Patel",
-    Environment       = var.env,
-    Create_Date       = "02 Jan 2025"
+  common_tags = {
+    ResourceOwner   = var.resource_owner
+    DeliveryManager = var.delivery_manager
+    ProjectName     = var.project_name
+    BusinessUnit    = var.business_unit
+    CreateDate      = var.create_date
   }
 }
 
